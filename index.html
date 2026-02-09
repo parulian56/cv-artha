@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV - Artha Parulian Silitonga</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+        body { font-family: 'Inter', sans-serif; }
+        .skill-badge {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        .skill-badge:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(102, 126, 234, 0.4);
+        }
+        .section-title {
+            position: relative;
+            padding-left: 20px;
+        }
+        .section-title::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 4px;
+            height: 24px;
+            background: linear-gradient(180deg, #667eea 0%, #764ba2 100%);
+            border-radius: 2px;
+        }
+        .project-card {
+            transition: all 0.3s ease;
+            border-left: 3px solid transparent;
+        }
+        .project-card:hover {
+            border-left-color: #667eea;
+            background: #f8f9ff;
+            transform: translateX(4px);
+        }
+    </style>
+</head>
+
+<body class="bg-gradient-to-br from-gray-50 to-gray-100 min-h-screen py-8 px-4">
+
+    <div class="max-w-5xl mx-auto bg-white shadow-2xl rounded-2xl overflow-hidden">
+
+        <!-- HEADER dengan Gradient -->
+        <div class="relative bg-gradient-to-r from-gray-800 via-gray-900 to-black text-white p-10">
+            <div class="absolute top-0 right-0 w-64 h-64 bg-purple-600 rounded-full opacity-10 blur-3xl"></div>
+            <div class="absolute bottom-0 left-0 w-64 h-64 bg-blue-600 rounded-full opacity-10 blur-3xl"></div>
+            
+            <div class="relative z-10 text-center">
+                <h1 class="text-4xl font-bold mb-2 tracking-tight">Artha Parulian Silitonga</h1>
+                <p class="text-xl text-gray-300 mb-4">Full Stack Web Developer</p>
+                <div class="flex flex-wrap justify-center gap-3 text-sm">
+                    <span class="bg-white/10 backdrop-blur-sm px-4 py-2 rounded-full">Laravel</span>
+                    <span class="bg-white/10 backdrop-blur-sm px-4 py-2 rounded-full">PHP</span>
+                    <span class="bg-white/10 backdrop-blur-sm px-4 py-2 rounded-full">Tailwind CSS</span>
+                    <span class="bg-white/10 backdrop-blur-sm px-4 py-2 rounded-full">MySQL</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- CONTACT BAR -->
+        <div class="bg-gradient-to-r from-purple-600 to-blue-600 text-white py-4">
+            <div class="max-w-4xl mx-auto px-6 flex flex-wrap justify-center gap-6 text-sm">
+                <div class="flex items-center gap-2">
+                    <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                        <path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd"/>
+                    </svg>
+                    <span>Ciawi, Bogor</span>
+                </div>
+                <div class="flex items-center gap-2">
+                    <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                        <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"/>
+                        <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"/>
+                    </svg>
+                    <span>arthaparulian31@gmail.com</span>
+                </div>
+                <div class="flex items-center gap-2">
+                    <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                        <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"/>
+                    </svg>
+                    <span>083830517955</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="p-8 lg:p-12 space-y-10">
+
+            <!-- PROFIL -->
+            <section>
+                <h2 class="text-2xl font-bold text-gray-800 mb-4 section-title">Profil Profesional</h2>
+                <p class="text-gray-600 leading-relaxed text-justify">
+                    Siswa SMK jurusan Rekayasa Perangkat Lunak dengan passion kuat dalam pengembangan web modern. 
+                    Memiliki pengalaman praktis dalam membangun aplikasi web full-stack menggunakan Laravel framework, 
+                    dengan kemampuan merancang database relasional, implementasi CRUD operations, dan desain UI/UX responsif 
+                    menggunakan Tailwind CSS. Aktif mengembangkan berbagai proyek untuk meningkatkan kemampuan teknis 
+                    dan siap berkontribusi dalam tim pengembangan profesional.
+                </p>
+            </section>
+
+            <!-- PENDIDIKAN -->
+            <section>
+                <h2 class="text-2xl font-bold text-gray-800 mb-4 section-title">Pendidikan</h2>
+                <div class="bg-gradient-to-r from-purple-50 to-blue-50 p-6 rounded-xl border-l-4 border-purple-600">
+                    <div class="flex justify-between items-start flex-wrap gap-2">
+                        <div>
+                            <h3 class="text-lg font-bold text-gray-800">SMK Amaliah 1 & 2 Ciawi</h3>
+                            <p class="text-purple-700 font-semibold">Rekayasa Perangkat Lunak (RPL)</p>
+                            <p class="text-gray-600 text-sm mt-1">Fokus pada Web Development & Database Management</p>
+                        </div>
+                        <span class="bg-purple-600 text-white px-4 py-1 rounded-full text-sm font-semibold">
+                            2023 - Sekarang
+                        </span>
+                    </div>
+                </div>
+            </section>
+
+            <!-- SKILL dengan Progress Bar -->
+            <section>
+                <h2 class="text-2xl font-bold text-gray-800 mb-4 section-title">Keahlian Teknis</h2>
+                
+                <div class="space-y-4">
+                    <div>
+                        <div class="flex justify-between mb-2">
+                            <span class="font-semibold text-gray-700">Laravel & PHP</span>
+                            <span class="text-purple-600 font-semibold">85%</span>
+                        </div>
+                        <div class="w-full bg-gray-200 rounded-full h-3">
+                            <div class="bg-gradient-to-r from-purple-600 to-blue-600 h-3 rounded-full" style="width: 85%"></div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="flex justify-between mb-2">
+                            <span class="font-semibold text-gray-700">HTML & CSS</span>
+                            <span class="text-purple-600 font-semibold">90%</span>
+                        </div>
+                        <div class="w-full bg-gray-200 rounded-full h-3">
+                            <div class="bg-gradient-to-r from-purple-600 to-blue-600 h-3 rounded-full" style="width: 90%"></div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="flex justify-between mb-2">
+                            <span class="font-semibold text-gray-700">Tailwind CSS</span>
+                            <span class="text-purple-600 font-semibold">88%</span>
+                        </div>
+                        <div class="w-full bg-gray-200 rounded-full h-3">
+                            <div class="bg-gradient-to-r from-purple-600 to-blue-600 h-3 rounded-full" style="width: 88%"></div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="flex justify-between mb-2">
+                            <span class="font-semibold text-gray-700">MySQL Database</span>
+                            <span class="text-purple-600 font-semibold">80%</span>
+                        </div>
+                        <div class="w-full bg-gray-200 rounded-full h-3">
+                            <div class="bg-gradient-to-r from-purple-600 to-blue-600 h-3 rounded-full" style="width: 80%"></div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="flex justify-between mb-2">
+                            <span class="font-semibold text-gray-700">Git & GitHub</span>
+                            <span class="text-purple-600 font-semibold">75%</span>
+                        </div>
+                        <div class="w-full bg-gray-200 rounded-full h-3">
+                            <div class="bg-gradient-to-r from-purple-600 to-blue-600 h-3 rounded-full" style="width: 75%"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Skill Badges -->
+                <div class="mt-6 flex flex-wrap gap-3">
+                    <span class="skill-badge text-white px-4 py-2 rounded-lg text-sm font-semibold shadow-lg">MVC Architecture</span>
+                    <span class="skill-badge text-white px-4 py-2 rounded-lg text-sm font-semibold shadow-lg">RESTful API</span>
+                    <span class="skill-badge text-white px-4 py-2 rounded-lg text-sm font-semibold shadow-lg">Responsive Design</span>
+                    <span class="skill-badge text-white px-4 py-2 rounded-lg text-sm font-semibold shadow-lg">Database Design</span>
+                </div>
+            </section>
+
+            <!-- PROYEK -->
+            <section>
+                <h2 class="text-2xl font-bold text-gray-800 mb-4 section-title">Portfolio Proyek</h2>
+                <div class="space-y-4">
+                    <div class="project-card bg-white p-6 rounded-xl shadow-md hover:shadow-xl">
+                        <div class="flex items-start justify-between mb-3">
+                            <h3 class="text-lg font-bold text-gray-800">Sistem Inventaris Sekolah</h3>
+                            <span class="bg-green-100 text-green-700 px-3 py-1 rounded-full text-xs font-semibold">Completed</span>
+                        </div>
+                        <p class="text-gray-600 mb-4">
+                            Aplikasi manajemen inventaris lengkap dengan fitur CRUD untuk pengelolaan barang, 
+                            stok barang, kategorisasi, sistem peminjaman dan pengembalian barang dengan tracking waktu.
+                        </p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="bg-red-100 text-red-700 px-3 py-1 rounded-full text-xs">Laravel</span>
+                            <span class="bg-blue-100 text-blue-700 px-3 py-1 rounded-full text-xs">MySQL</span>
+                            <span class="bg-cyan-100 text-cyan-700 px-3 py-1 rounded-full text-xs">Tailwind CSS</span>
+                            <span class="bg-purple-100 text-purple-700 px-3 py-1 rounded-full text-xs">Authentication</span>
+                        </div>
+                    </div>
+
+                    <div class="project-card bg-white p-6 rounded-xl shadow-md hover:shadow-xl">
+                        <div class="flex items-start justify-between mb-3">
+                            <h3 class="text-lg font-bold text-gray-800">Website Portfolio Pribadi</h3>
+                            <span class="bg-blue-100 text-blue-700 px-3 py-1 rounded-full text-xs font-semibold">Live</span>
+                        </div>
+                        <p class="text-gray-600 mb-4">
+                            Portfolio interaktif yang menampilkan biodata profesional, showcase keahlian teknis, 
+                            dan galeri proyek dengan desain modern dan fully responsive.
+                        </p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="bg-orange-100 text-orange-700 px-3 py-1 rounded-full text-xs">HTML5</span>
+                            <span class="bg-cyan-100 text-cyan-700 px-3 py-1 rounded-full text-xs">Tailwind CSS</span>
+                            <span class="bg-yellow-100 text-yellow-700 px-3 py-1 rounded-full text-xs">JavaScript</span>
+                            <span class="bg-green-100 text-green-700 px-3 py-1 rounded-full text-xs">Responsive</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- PENGALAMAN & ACHIEVEMENT -->
+            <section>
+                <h2 class="text-2xl font-bold text-gray-800 mb-4 section-title">Pengalaman & Pencapaian</h2>
+                <div class="space-y-4">
+                    <div class="flex gap-4">
+                        <div class="flex-shrink-0 w-12 h-12 bg-gradient-to-br from-purple-500 to-blue-500 rounded-lg flex items-center justify-center text-white font-bold">
+                            📚
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-gray-800">Project-Based Learning</h3>
+                            <p class="text-gray-600 text-sm mt-1">
+                                Aktif mengerjakan berbagai project sekolah dan latihan mandiri dalam pembuatan 
+                                website dinamis menggunakan Laravel framework dengan fokus pada best practices.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="flex gap-4">
+                        <div class="flex-shrink-0 w-12 h-12 bg-gradient-to-br from-purple-500 to-blue-500 rounded-lg flex items-center justify-center text-white font-bold">
+                            💻
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-gray-800">Self-Learning & Development</h3>
+                            <p class="text-gray-600 text-sm mt-1">
+                                Konsisten belajar teknologi web terbaru melalui dokumentasi resmi, 
+                                online courses, dan praktik langsung dalam membangun aplikasi real-world.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="flex gap-4">
+                        <div class="flex-shrink-0 w-12 h-12 bg-gradient-to-br from-purple-500 to-blue-500 rounded-lg flex items-center justify-center text-white font-bold">
+                            🎯
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-gray-800">Version Control & Collaboration</h3>
+                            <p class="text-gray-600 text-sm mt-1">
+                                Terbiasa menggunakan Git untuk version control dan GitHub untuk 
+                                repository management dalam setiap proyek pengembangan.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+
+        <!-- FOOTER -->
+        <div class="bg-gradient-to-r from-gray-800 to-black text-white py-6 px-8 text-center"></div>
+    </div>
+
+</body>
+</html>
